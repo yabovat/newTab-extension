@@ -1,15 +1,33 @@
 /* styles.css */
+
+/* Styling for displaying current time */
 #currentTime {
     font-family: "Century Gothic", Arial, sans-serif;
-    font-size: 100px;
-    font-weight: lighter;
+    font-size: 80px;
+    font-weight: 100;
     color: rgb(48, 44, 44);
   }
   
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
+  /* Styling for formatted date */
+  #formattedDate {
+    font-family: "Times New Roman", Arial, sans-serif;
+    font-size: 31px;
+    font-style: italic;
+  }
+  
+  /* Flex container for layout */
+  .flex-container {
+    display: flex;
+    align-items: center; /* Align children vertically */
+    justify-content: center; /* Center children horizontally */
+    height: 100vh; /* Set height for demonstration */
+  }
+  
+  /* Styling for div elements inside flex container */
+  .flex-container div {
+    padding: 30px; /* Padding around content */
+    flex: 1 1 0%; /* Flex properties */
+    line-height: 0.3; /* Adjust line height to the desired value */
+    text-align: center; /* Center text horizontally within div */
   }
   
