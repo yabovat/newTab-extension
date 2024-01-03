@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Unsplash New Tab Extension",
+  "version": "1.0",
+  "permissions": [
+    "storage",
+    "https://api.unsplash.com/*",
+  ],
+  "background": {
+    "scripts": ["script.js"],
+    "persistent": false
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}
