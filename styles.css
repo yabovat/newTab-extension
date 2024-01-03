@@ -1,18 +1,52 @@
-/* styles.css */
-
-/* Styling for displaying current time */
-#currentTime {
+/* Resetting default margin and padding, using flex to center content */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+  }
+  
+  /* Styling for the Unsplash image */
+  #unsplashImage {
+    position: fixed; /* Fixed position to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Maintain aspect ratio while covering the container */
+    z-index: -1; /* Positioned behind other elements */
+    filter: brightness(50%); /* Make image darker for increased readability */
+  }
+  
+  /* Styling for attribution information */
+  .attribution {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #ffffff;
+  }
+  
+  /* Styling for displaying the current time */
+  #currentTime {
     font-family: "Century Gothic", Arial, sans-serif;
     font-size: 80px;
     font-weight: 100;
-    color: rgb(48, 44, 44);
+    color: rgb(255, 255, 255);
   }
   
-  /* Styling for formatted date */
+  /* Styling for the formatted date */
   #formattedDate {
     font-family: "Times New Roman", Arial, sans-serif;
     font-size: 31px;
     font-style: italic;
+    color: rgb(255, 255, 255);
   }
   
   /* Flex container for layout */
@@ -25,9 +59,10 @@
   
   /* Styling for div elements inside flex container */
   .flex-container div {
+    border: 0px solid brown; /* No border */
     padding: 30px; /* Padding around content */
-    flex: 1 1 0%; /* Flex properties */
-    line-height: 0.3; /* Adjust line height to the desired value */
+    flex: 1 1 0%;
+    line-height: 0.5;
     text-align: center; /* Center text horizontally within div */
   }
   
